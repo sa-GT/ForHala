@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Operation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sura of categories " >
+      <th scope="row">{{sura.id}}</th>
+      <td>{{sura.name}}</td>
+      <td><a href="#" class="btn btn-primary" routerLink="/product/{{sura.id}}">Get catProduct</a></td>
+    </tr>
+  </tbody>
+</table>

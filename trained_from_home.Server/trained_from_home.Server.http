@@ -1,0 +1,6 @@
+@trained_from_home.Server_HostAddress = http://localhost:5299
+
+GET {{trained_from_home.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
