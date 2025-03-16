@@ -9,7 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { CategoriesComponent } from './categories/categories.component';
-
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+//import {  } from '@angular/core'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +20,14 @@ import { CategoriesComponent } from './categories/categories.component';
     HomeComponent,
     AboutComponent,
     ProductsComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
